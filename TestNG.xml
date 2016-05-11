@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="1" name="Sound Tests"
+	skipfailedinvocationcounts="false" junit="false" parallel="methods"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<test verbose="2" name="P1" annotations="JDK">
+
+		<groups>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.nasa.test.sound.TestSoundServices"></class>
+		</classes>
+	</test>
+</suite>
