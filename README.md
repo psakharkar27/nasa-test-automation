@@ -1,7 +1,7 @@
 
 ### Introduction
 Project nasa-test-automation :  Automation test cases for **https://api.nasa.gov/planetary/sounds** service.
-
+- - - -
 ### API Reference
 
 #### **GET Sound Request** 
@@ -23,10 +23,27 @@ api_key	|string |DEMO_KEY
 
 ###Installation
 
-Provide code examples and explanations of how to get the project.
+Clone Repo.
+git clone https://github.com/psakharkar27/nasa-test-automation.git
 
 
 ###Tests
 
-Describe and show how to run the tests with code examples.
-Contributors
+ * Verifying api_key parameter.
+    * verify missing api key use case
+    * verify invalid api key use case
+    * verify valid api key use case
+ 
+ * Verifying limit parameter
+    * verify defualt limit use case
+    * verify total limit use case
+    * verify nagative limit use case
+    * verify non interger limit use case
+    
+ * Verifying search 'q' parameter
+    * verify defualt limit use case
+    * verify total limit use case
+    * verify nagative limit use case
+    * verify non interger limit use case
+ 
+ * Verify http request
