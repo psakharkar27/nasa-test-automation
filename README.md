@@ -26,6 +26,8 @@ api_key	|string |DEMO_KEY
 Clone Repo.
 git clone https://github.com/psakharkar27/nasa-test-automation.git
 
+mvn build
+
 
 ###Tests
 
@@ -47,3 +49,7 @@ git clone https://github.com/psakharkar27/nasa-test-automation.git
     * verify non interger limit use case
  
  * Verify http request
+
+
+###Running Test
+mvn test -Denv=dev
