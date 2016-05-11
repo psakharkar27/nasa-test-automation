@@ -24,4 +24,7 @@ public class TestGroups {
 
     //Mark tests that are only for BETA with this group.
     public static final String BETA = "BetaTest";
+    
+  //Mark tests that are only for BROKEN with this group.
+    public static final String BROKEN = "Broken";
 }
