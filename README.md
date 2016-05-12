@@ -53,3 +53,24 @@ Running the project
 
 ###Running Test
 mvn test -Denv=dev
+
+```java
+Test File : TestSoundServices.java
+
+@Test(description = "Test for defualt limit it should be less than or equal to given count.", groups = {
+			"Regression", "BetaTest" })
+	public void testDefaultLimit() throws Exception {
+
+		queryParameters.put("api_key", getPropValues().getProperty("sound.apiKey"));
+
+		response = getSoundServices(true, queryParameters);
+		assertEquals(response.getStatus(), Response.Status.OK.getStatusCode());
+
+		String value = response.readEntity(String.class);
+		ObjectMapper mapper = new ObjectMapper();
+		Sounds result = mapper.readValue(value, Sounds.class);
+
+		assertTrue(result.getCount().intValue() <= 10, "Count mismatch");
+
+	}
+```
