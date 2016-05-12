@@ -39,10 +39,10 @@ Running the project
     * verify demo api key use case & rate limit use cases
  
  * Verifying limit parameter use cases.
-    * verify defualt limit use case
+    * verify default limit use case
     * verify total limit use case
-    * verify nagative limit use case
-    * verify non interger limit use case
+    * verify negative limit use case
+    * verify non integer limit use case
     
  * Verifying search 'q' parameter use case.
  
